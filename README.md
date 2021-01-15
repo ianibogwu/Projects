@@ -1,2 +1,2 @@
 # master-branch
-This is my new branch
+This is a folder of my projects at General Assembly
