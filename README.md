@@ -1,4 +1,3 @@
-# My Projects
-This is a folder of my projects at General Assembly.
+# Welcome to my Projects Directory!
 
-They include regression and classification problems.
+This is a directory of my projects at General Assembly.
