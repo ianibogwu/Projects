@@ -1,29 +1,20 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 2: AMES Housing Data project
 
+## Problem Statement:
+With a population of about 67,000 people and the 7th most populated city in Iowa, Ames is quickly becoming home to lots of individuals and familes alike. That being said, many sellers are looking to take advantage of the market and sell their homes while demand is high. 
 
-### Overview
+Our realty firm, Coco Realty has decided to host a seller's seminar to show homeowners, how much their properties can sell for in this market. Using information from the county assesors office, I will attempt build a model that can predict the price of homes in the Ames, IA area.
 
- ### Problem Statement:
+In addition to this, I will make note of features that can be improved in the home to increase its sale price.
 
-Ames, IA has seen an increase in population of younger residents. According to the US Census, over 40% of it's residents are between the ages of 18-24 years. While this is a good thing for the city itself, as a population that young can contribute to the work force, buy homes, pay taxes and more; it has it's elderly population feeling left out.
 
-The same Census also puts the elderly population of residents 65 or older in Ames at 8%. With more younger residents coming in and growing, the standard of living is bound to keep increasing. As they grow older in age, they feel marginalized and want to know what options they have.
+**GOALS**:
 
-Most have been considering leaving the state. Take John and Carrie Preston for instance. They've been residents for over 25 years but with the rapid changes, they feel it might be time to relocate to Florida simply because of the access to beaches, abundance of assisted living homes and close family in the area.
-
- They've called upon us here at Datascience-R-US to give them an idea of how much their home is currently worth. They've invited a few friends as well who are interested in relocating so we will be speaking at the local Elks Club to a few of them.
-    
- In this project, we will attempt to give them a prediction of the price of houses in the Ames,Iowa area and what features contribute the most value to the price of a home. This way, they can make an informed decision on which features they can update in their home in order to capitalize off of the market.\n",
- 
- ### GOALS:,
- 
 In this notebook, I am taking you through my steps of how I use the Ames housing data set to predict the price of homes in the Iowa area.
-  
-We will be exploring a few models in order to reach our goal of predicting price.
 
-We will be looking at: -Linear Regression Models -Lasso Models -Ridge Models
+I will be exploring a few models in order to reach our goal of predicting price such as Linear, Lasso and Ridge models.
 
-After evaluating these three models, we will compare these models to our baseline score and select which model works the best in acheving our goal."
+After evaluating these three models, I will select which model works the best in acheving our goal.
  
 ### Data Dictionary:,
 
