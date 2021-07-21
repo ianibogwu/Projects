@@ -20,8 +20,12 @@ For the training set, we have 2051 rows of data and 81 columns, including our ta
 I first checked for null values in the data set to know how much "missing data" we are working with. Now, missing is subjective as a null value doesn't always indicate missing data. For example, a home without a fence can be recorded as 'N/A' but it is a data point as it indicates the home does not have a fence.
 
 Total null values are below:
-![Null Values](../01-Ames-housing/photos/null_values.png)
 
+![Null_Values](../01-Ames-housing/photos/null_values.png)
+
+Knowing these values, I went ahead and featured engineered some of the variables in the null table and other variables in the dataset to make them more useful for analysis. Note: This is only a sample of features engineered not the full list
+
+![featured engineered variables](../01-Ames_housing/photos/feat_eng_var.png)
 
 # Overall Findings:
 
