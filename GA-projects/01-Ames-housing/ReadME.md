@@ -1,21 +1,27 @@
-# PROJECT 2: AMES,IA HOUSING DATA PROJECT
+# AMES,IA HOUSING DATA PROJECT
 
 ## Problem Statement:
-With a population of about 67,000 people and the 7th most populated city in Iowa, Ames is quickly becoming home to lots of individuals and familes alike. That being said, many sellers are looking to take advantage of the market and sell their homes while demand is high.
+With a population of about 67,000 people and the 7th most populated city in Iowa, Ames is quickly becoming home to lots of individuals and families alike. That being said, many sellers are looking to take advantage of the market and sell their homes while demand is high.
 
-Our realty firm, Coco Realty has decided to host a seller's seminar to show homeowners, how much their properties can sell for in this market. Using information from the county assesors office, I will attempt build a model that can predict the price of homes in the Ames, IA area.
+Our realty firm, Coco Realty has decided to host a seller's seminar to show homeowners, how much their properties can sell for in this market. Using information from the county assessors office, I will attempt build a model that can predict the price of homes in the Ames, IA area.
 
 - I will be exploring a few regression models such as Linear, Lasso and Ridge models for predicting sales price.
-- In addition to this, I will make note of features that can be improved in the home to increase its sale price.
 - After evaluating these three models, I will select which model works the best in giving the best predictions of home prices in Ames, IA.
+- In addition to this, I will make note of features that can be improved in the home to increase its sale price.
 
 # Data Dictionary:
 
-A copy of the data dictonary used in this project can be found at the link below. This will give insight as to what each column and their values mean
+A copy of the data dictionary used in this project can be found at the link below. This will give insight as to what each column and their values mean. This also includes an explanation of feature engineered variables
 
 http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 
-# Next up: Data Cleaning, EDA and Modeling!
+# Data Cleaning:
+For the training set, we have 2051 rows of data and 81 columns, including our target variable, SalePrice.
+I first checked for null values in the data set to know how much "missing data" we are working with. Now, missing is subjective as a null value doesn't always indicate missing data. For example, a home without a fence can be recorded as 'N/A' but it is a data point as it indicates the home does not have a fence.
+
+Total null values are below:
+![Null Values](../01-Ames-housing/photos/null_values.png)
+
 
 # Overall Findings:
 
@@ -66,3 +72,16 @@ Neighborhoods
 StoneBr, Nridght, NoRidge, Somertst are among some of the neighborhoods have the highest value. So if you're home falls within those areas, an additional $2-3k in value can be added to your home.
 
 # Summary:
+
+
+#Directory
+├── Ames\ Housing\ Data\ Project.pdf
+├── Cleaning_EDA.ipynb
+├── Modeling_final.ipynb
+├── ReadME.md
+├── datasets
+│   ├── lasso_results.csv
+│   ├── test.csv
+│   └── train.csv
+├── modeling_notebook.ipynb
+└── project_2-EDA.ipynb
