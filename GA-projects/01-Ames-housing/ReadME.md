@@ -25,7 +25,20 @@ Total null values are below:
 
 Knowing these values, I went ahead and featured engineered some of the variables in the null table and other variables in the dataset to make them more useful for analysis. Note: This is only a sample of features engineered not the full list
 
-![featured engineered variables](../01-Ames_housing/photos/feat_eng_var.png)
+![featured engineered variables](../01-Ames-housing/photos/feat_eng_var.png)
+
+I also normalized the dependent variable(**SalePrice**) by using a log function which allows our data to closely resemble a normal distribution. This allows for more accurate calculation as the models being used make the assumption that the data is already normalized.
+
+Here's a before and after:
+
+![Original Sale Price](../01-Ames-housing/photos/Saleprice_original.png)
+![Log Sale Price](../01-Ames-housing/photos/Log_Saleprice.png)
+
+**Hetroskadacity transformed to homoskedacity**:
+
+Now that our dependent variable has been normalized, we see a transformation from hetroskedacity to homoskedacity. This means our errors(difference between our true and predicted values) now have a constant value rather than fluctuating values with every increase in the independent variable. Here's what it looks like now using one of the independent variables *Gross living Area*
+
+![](.../photos/residuals.png)
 
 # Overall Findings:
 
