@@ -39,7 +39,8 @@ Here's a before and after:
 
 Now that our dependent variable has been normalized, we see a transformation from hetroskedacity to homoskedacity. This means our errors(difference between our true and predicted values) now have a constant value rather than fluctuating values with every increase in the independent variable. Here's what it looks like now using one of the independent variables *Gross living Area*
 
-![](.../photos/residuals.png)
+![](../01-Ames-housing/photos/residuals.png)
+
 
 # Overall Findings:
 
