@@ -32,6 +32,7 @@ I also normalized the dependent variable(**SalePrice**) by using a log function 
 Here's a before and after:
 
 ![Original Sale Price](../01-Ames-housing/photos/Saleprice_original.png)
+
 ![Log Sale Price](../01-Ames-housing/photos/Log_Saleprice.png)
 
 **Hetroskadacity transformed to homoskedacity**:
