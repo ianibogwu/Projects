@@ -37,9 +37,46 @@ Here's a before and after:
 
 **Hetroskadacity transformed to homoskedacity**:
 
-Now that our dependent variable has been normalized, we see a transformation from hetroskedacity to homoskedacity. This means our errors(difference between our true and predicted values) now have a constant value rather than fluctuating values with every increase in the independent variable. Here's what it looks like now using one of the independent variables *Gross living Area*
+Now that our dependent variable has been normalized, we see a transformation from hetroskedacity to homoskedacity. This means our errors or residuals(difference between our true and predicted values) now have a constant value rather than fluctuating values with every increase in the independent variable. Here's what it looks like now using one of the independent variables *Gross living Area*
 
-![](../01-Ames-housing/photos/residuals.png)
+![residuals](../01-Ames-housing/photos/residuals.png)
+
+# Exploratory Data Analysis:
+Here I will be describing some of the findings of our data.
+
+#### Correlation of dependent variables to SalePrice
+![correlation](../01-Ames-housing/photos/Saleprice_correlation)
+
+These show how all the independent variables correlate with the dependent. **Overall Quality** takes the number one spot with a correlation of 80 percent . The better a home's overall quality is, the higher the sale price and vice versa, holding all other factors constant.
+
+#### Dwelling Type (MS Subclass)
+
+![Mssubclass](../01-Ames-housing/photos/Mssubclass)
+
+As listed in the county files, an MS Sub class identifies the dwelling type of the home. An MS Sub Class of 75 means that the house is a 2 1/2 story structure. This would mean that the most expenisve homes in Ames, IA tend to be the 2 1/2 story houses, signifying that the town is oriented more towards families.
+
+#### Neighborhoods
+
+![neighborhood](../01-Ames-housing/photos/neighborhood)
+The most expensive neighborhood by Saleprice is *StoneBr*. On average, houses in this neighborhood sell for just above $350,000.
+
+#### Garage Finishing
+
+![Garage Finish](../01-Ames-housing/photos/garage_finish)
+
+- A fully finished garage interior (3.0) in the Ames, IA area garners a sales price of about \\$250,000 on average; A \\$40,000 increase compared to a roughly finished garage (2.0)
+
+#### Overall Quality
+
+![Overall Quality](../01-Ames-housing/photos/overall_qual)
+
+- There is a very linear relationship between overall quality and sale price. The better the material and finish of the house, the higher the selling price. Thus can be a point to make to sellers looking to sell their homes for top dollar
+
+
+
+
+
+
 
 
 # Overall Findings:
