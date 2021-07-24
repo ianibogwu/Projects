@@ -44,48 +44,64 @@ Now that our dependent variable has been normalized, we see a transformation fro
 # Exploratory Data Analysis:
 Here I will be describing some of the findings of our data.
 
-#### Correlation of dependent variables to SalePrice
-![correlation](../01-Ames-housing/photos/Saleprice_correlation)
+#### Correlation of dependent variables to SalePrice:
 
-These show how all the independent variables correlate with the dependent. **Overall Quality** takes the number one spot with a correlation of 80 percent . The better a home's overall quality is, the higher the sale price and vice versa, holding all other factors constant.
+![correlation](../01-Ames-housing/photos/Saleprice_correlation.png)
 
-#### Dwelling Type (MS Subclass)
+- These show how all the independent variables correlate with the dependent. **Overall Quality** takes the number one spot with a correlation of 80 percent . The better a home's overall quality is, the higher the sale price and vice versa, holding all other factors constant.
+
+#### Gross living Area:
+
+![gross living area](../01-Ames/housing/photos/gr_liv_area.png)
+
+- There's a positively linear relationship between gross living area and Sale price. The greater the gross living area, the higher the sale price and vice versa.
+
+#### Dwelling Type (MS Subclass):
 
 ![Mssubclass](../01-Ames-housing/photos/Mssubclass.png)
 
-As listed in the county files, an MS Sub class identifies the dwelling type of the home. An MS Sub Class of 75 means that the house is a 2 1/2 story structure. This would mean that the most expenisve homes in Ames, IA tend to be the 2 1/2 story houses, signifying that the town is oriented more towards families.
+- As listed in the county files, an MS Sub class identifies the dwelling type of the home. An MS Sub Class of 75 means that the house is a 2 1/2 story structure. This would mean that the most expensive homes in Ames, IA tend to be the 2 1/2 story houses, signifying that the town is oriented more towards families.
 
-#### Neighborhoods
+#### Neighborhoods:
 
 ![neighborhood](../01-Ames-housing/photos/neighborhood.png)
-The most expensive neighborhood by Saleprice is *StoneBr*. On average, houses in this neighborhood sell for just above $350,000.
 
-#### Garage Finishing
+- The most expensive neighborhood by Saleprice is *StoneBr*. On average, houses in this neighborhood sell for just above $350,000.
+
+#### Garage Finishing:
 
 ![Garage Finish](../01-Ames-housing/photos/garage_finish.png)
 
 - A fully finished garage interior (3.0) in the Ames, IA area garners a sales price of about \\$250,000 on average; A \\$40,000 increase compared to a roughly finished garage (2.0)
 
-#### Overall Quality
+#### Overall Quality:
 
-![Overall Quality](../01-Ames-housing/photos/overall_qual.png)
+![Overall Quality](../01-Ames-housing/photos/overal_qual.png)
 
-- There is a very linear relationship between overall quality and sale price. The better the material and finish of the house, the higher the selling price. Thus can be a point to make to sellers looking to sell their homes for top dollar
+- There is a very linear relationship between overall quality and sale price. The better the material and finish of the house, the higher the selling price. This can be a point to make to sellers looking to sell their homes for top dollar
 
-#### Pool
+#### Pool:
 
 ![Pool](../01-Ames-housing/photos/pool.png)
 
-Having a pool significantly increases Saleprice. On average, sellers can expect at least \\$42,421 more in Sale price if their home includes a pool, holding all other values constant.
+- Having a pool significantly increases Sale price. On average, sellers can expect at least \\$42,421 more in Sale price if their home includes a pool, holding all other values constant.
 
 
-#### Year Remodeled and Year Built
+#### Year Remodeled and Year Built:
 
-![year remod](../01/Ames-housing/photos.year_remod.png)
+![year remod](../01-Ames-housing/photos.year_remod.png)
 
-This visual shows that homes built and or remodeled in later years (especially after 2000) command the highest price in this market.
+- This visual shows that homes built and or remodeled in later years (especially after 2000) command the highest price in this market.
 
+#### Driveway:
 
+![Driveway](../01-Ames-housing/photos.driveway.png)
+
+- On average, having a fully paved driveway results in. a 68.49% increase in Sale Price from a partial driveway, holding all other factors constant. Another selling point to get clients to fully pave their driveways rather than doing a partial or dirt driveway.
+
+#### Central Air:
+![central air](../01-Ames-housing/photos.central_air.png)
+- Homes in Ames, IA with central air sell for over $60000 more than homes without one, holding all other values constant. Another selling point for clients
 
 
 
