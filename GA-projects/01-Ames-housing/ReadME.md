@@ -52,7 +52,7 @@ Here I will be describing some of the findings of our data.
 
 #### Gross living Area:
 
-![gross living area](../01-Ames/housing/photos/gr_liv_area.png)
+![gross living area](../01-Ames-housing/photos/gr_liv_area.png)
 
 - There's a positively linear relationship between gross living area and Sale price. The greater the gross living area, the higher the sale price and vice versa.
 
@@ -89,18 +89,20 @@ Here I will be describing some of the findings of our data.
 
 #### Year Remodeled and Year Built:
 
-![year remod](../01-Ames-housing/photos.year_remod.png)
+![year remod](../01-Ames-housing/photos/year_remod.png)
 
 - This visual shows that homes built and or remodeled in later years (especially after 2000) command the highest price in this market.
 
 #### Driveway:
 
-![Driveway](../01-Ames-housing/photos.driveway.png)
+![Driveway](../01-Ames-housing/photos/driveway.png)
 
 - On average, having a fully paved driveway results in. a 68.49% increase in Sale Price from a partial driveway, holding all other factors constant. Another selling point to get clients to fully pave their driveways rather than doing a partial or dirt driveway.
 
 #### Central Air:
-![central air](../01-Ames-housing/photos.central_air.png)
+
+![central air](../01-Ames-housing/photos/central_air.png)
+
 - Homes in Ames, IA with central air sell for over $60000 more than homes without one, holding all other values constant. Another selling point for clients
 
 
