@@ -48,6 +48,8 @@ Here I will be describing some of the findings of our data.
 
 ![correlation](../01-Ames-housing/photos/Saleprice_correlation.png)
 
+- Correlations tell us how closely related the values we put in (independent variables) affect the outcome we are trying to figure out (dependent variables).
+- For this particular problem, we are trying tp figure out how the features of a home, including the neighborhood it's in affect how much it will sell for.
 - These show how all the independent variables correlate with the dependent. **Overall Quality** takes the number one spot with a correlation of 80 percent . The better a home's overall quality is, the higher the sale price and vice versa, holding all other factors constant.
 
 #### Gross living Area:
@@ -103,69 +105,49 @@ Here I will be describing some of the findings of our data.
 
 ![central air](../01-Ames-housing/photos/central_air.png)
 
-- Homes in Ames, IA with central air sell for over $60000 more than homes without one, holding all other values constant. Another selling point for clients
+- Homes in Ames, IA with central air sell for over $60000 more than homes without one, holding all other values constant. Another selling point for clients. Further analysis will be needed to know the actual value of central air in each neighborhood in Ames, IA.
 
 
+# Modeling
+For this section, I focused on using regression models as finding predictive values of homes is the major goal of this project. The three models I will use in this section are **Linear, Lasso and Ridge regression**.
 
-# Overall Findings:
+Something worth noting is that all three models above focus on reducing the errors between the true and predicted values; Their methods however vary.
 
-So all three models seemed to score between a range of 90-93% between the training and testing data. I did notice that my linear and lasso models made it difficult to see which variables are strongly correlated with price
+#### Linear Regression:
 
-However with my Ridge Model, I can clearly see which variable is affecting price and can give recommendations as well! So Ridge is the model we will stick with.
+- The linear regression model is focused on the least squared objective, that is reducing errors between true and predicted values. For this particular project, the model scored a whopping 94.8% on the training set and 91.5% on the testing set. Since the testing set is the true capability of the model, it is safe to say that according to the Linear model, 91.5% of variance in the Sale price is caused by the independent variables such as (gross living area, overall quality, all 220 independent features).
+
+#### Lasso Regression:
+
+- Lasso follows the same objective as linear regression of reducing errors between the true and predicted values but does so by adding what is called a "penalty". It also has a cool addition called "feature selection" that reduces variables that aren't contributing very much to the model to zero. This allows us to find which variables are really doing the work in adding to the model.
+
+- The lasso model gives us a training score of 94.4% and 92% testing. This means that 92% of the variance in sales price is caused by the independent variables. As mentioned before, feature selection is one of the model's caveat. Here are a list of the top 10 features that affected the model's score the most.
+
+
+#### Ridge Regression:
+
+- Ridge also follows the same objective as lasso and linear and also using a penalty scale that is decided based on the data we input. The ridge model a 94.8 % in training and 91.7% in testing.
+
+
+# Model Selection:
+
+All three models had a healthy range in testing scores between 91 - 92%. However in the end, **Lasso model** appeared to have the least variance in its training and testing score by a very slight margin so therefore it is our chosen model.
 
 # Recommendations!
 
-So after our findings we can now recommed a few things that our elderly patients can do to increase the value of their home
+![lasso coefficients](../01-Ames-housing/photos/lasso_coefs.png)
 
-In our EDA, square footage happened to be one of the biggest drivers of price. Looking at our Ridge model coefficients, we can see this proves to be true.
+- After our findings we can now recommend a few things that the homeowners in order to increase the value of their homes.
+- As shown above, Gross living area, the year built, Basement SF, Garage area and proximity to various conditions (Condition_1 Normal) are all things that affect the price but are outside of a homeowner's control. On the other hand, 'overall quality' and overall condition are something within the owner's purview. Here are a few:
 
-Lot Area, Gross Living Area, 1st and 2nd floor and total basement square footage carry added average value of over $10,000 in value.
+ **Driveway**: As mentioned above, homes with a paved drive way saw a 68.49% increase in Sale price compared to driveways that were partially paved. Clients are fully advised to pave their driveways if within their budget.
 
-Now it's completely understandable if our clients would be reluctant to accept this recommendation because it's not an easy thing to just add additional square footage!
+ **Kitchen Quality**: While the data makes it difficult to classify what is considered 'excellent' when it comes to kitchen quality, it is safe to say that aiming for the excellence (5) standard will draw in far more dollars than any of the other categories. Homes with an 'excellent' rating for the kitchen tend to sell over $100000 higher on average than homes with a good (4) rating.
 
-So what other options do we have?
+ ![kitchen Qual](../01-Ames-housing/photos/kitchen_qual.png)
 
-Improving Overall condition and quality and exterior quality
+ **Sale Type**: In Ames, IA the market is ruled by buyers who come in with low interest contracts, such as an FHA loan. It would be in the seller's best interest to look out for buyers with this type of financing, as the properties they're interested in tend to sell for higher prices.
 
--Keeping the overal condition and quality and exterior quality of your home can add value as well! Approximately, $7,000 to be exact! So just keeping the house in overall good condition and the quality of material that is used in the house in good shape is key!
-
-Misc Features
-
-Adding some miscellaneous features such as a Shed or a garage can add up up to $800 on average
-Garage
-
-Add another car garage or adding some square footage to your current garage area can add a value between  2000− 4000
-Paved Driveway
-
-Having a paved driveway can add up to $500 dollars in value as well
-Porch
-
-A screen porch, which can be added towards the rear of your home, can add up to $3000 in value!
-Fence Minimum Privacy
-
-Adding just a little fence privacy can increase the value
-Kitchen quality
-
--Kepping your kitchen in 'Excellent' shape also carries about a $5000 increase in value of your home
-
-Roof Matl_CompShg
-
-Compound shingle roofs adds an additional $2095 in value
-Neighborhoods
-
-StoneBr, Nridght, NoRidge, Somertst are among some of the neighborhoods have the highest value. So if you're home falls within those areas, an additional $2-3k in value can be added to your home.
+ ![Sale Type](../01-Ames-housing/photos/sale_type.png)
 
 # Summary:
-
-
-#Directory
-├── Ames\ Housing\ Data\ Project.pdf
-├── Cleaning_EDA.ipynb
-├── Modeling_final.ipynb
-├── ReadME.md
-├── datasets
-│   ├── lasso_results.csv
-│   ├── test.csv
-│   └── train.csv
-├── modeling_notebook.ipynb
-└── project_2-EDA.ipynb
