@@ -15,6 +15,11 @@ A copy of the data dictionary used in this project can be found at the link belo
 
 http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 
+| Feature | Description |    Data Type        |
+| :---    |   :----:    |     ---:   |
+| PID     | Parcel Identification number|
+
+
 # Data Cleaning:
 For the training set, we have 2051 rows of data and 81 columns, including our target variable, SalePrice.
 I first checked for null values in the data set to know how much "missing data" we are working with. Now, missing is subjective as a null value doesn't always indicate missing data. For example, a home without a fence can be recorded as 'N/A' but it is a data point as it indicates the home does not have a fence.
