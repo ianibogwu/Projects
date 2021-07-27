@@ -18,7 +18,7 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 | Feature | Description |   
 | :---    |   :----:    |
 | PID     | Parcel Identification number|
-| MS SUB CLASS| Type of dwelling|
+| MS Sub Class| Type of dwelling|
 |              |  020	1-STORY 1946 & NEWER ALL STYLES|
 |              |  030	1-STORY 1945 & OLDER|
 |              |  040	1-STORY W/FINISHED ATTIC ALL AGES|
@@ -34,8 +34,78 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 |              |  160	2-STORY PUD - 1946 & NEWER|
 |              |  180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER|
 |              |  190	2 FAMILY CONVERSION - ALL STYLES AND AGES|
-
-
+| MS Zoning    | Identifies the general zoning classification of the sale|
+|              |  A	- Agriculture|
+|              |  C -	Commercial|
+|              |  FV -	Floating Village Residential|
+|              |  I-	Industrial|
+|              |  RH - Residential High Density|
+|              |  RL -	Residential Low Density|
+|              |  RP -	Residential Low Density Park|
+|              |  RM -	Residential Medium Density|
+|Lot Frontage  |  Linear feet of street connected to property|
+|Lot Area      |  Lot size in square feet|
+|Street        | Type of road access to property|
+|              | Grvl - Gravel |
+|              | Pave - Paved  |
+|Alley         | Type of alley access to property |
+|              | Grvl - Gravel |
+|              | Pave - Paved  |
+|              | NA   - No Alley Access |
+|Lot Shape     | General shape of property |
+|              | Reg - Regular |
+|              | IR1 - Slightly irregular |
+|              | IR2 - Moderately irregular |
+|              | IR3 - Irregular            |
+|Land Contour  | Flatness of the property |
+|              |  Lvl -	Near Flat/Level |
+|              |  Bnk- 	Banked - Quick and significant rise from street grade to building |
+|              |  HLS-	Hillside - Significant slope from side to side |
+|              |  Low	- Depression |
+|Utilities     | Type of utilities available |
+|              |  AllPub -	All public Utilities (E,G,W,& S) |
+|              | NoSewr -	Electricity, Gas, and Water (Septic Tank) |
+|              |  NoSeWa -	Electricity and Gas Only |
+|              |  ELO	- Electricity only |
+|Lot Config    |  Lot configuration |
+|              |Inside	Inside lot |
+|              |Corner	Corner lot |
+|              |CulDSac	Cul-de-sac |
+|              |FR2	Frontage on 2 sides of property |
+|              |FR3	Frontage on 3 sides of property |
+|Land Slope    | Slope of property |
+|              |Gtl -	Gentle slope |
+|              |Mod -	Moderate Slope |
+|              |Sev	- Severe Slope |
+|Neighborhood  |Physical locations within Ames city limits |
+|              |Blmngtn	- Bloomington Heights |
+|              |Blueste	- Bluestem |
+|              |BrDale -	Briardale |
+|              |BrkSide -	Brookside |
+|              |ClearCr -	Clear Creek |
+|              |CollgCr	- College Creek |
+|              |Crawfor	- Crawford |
+|              |Edwards	- Edwards |
+|              |Gilbert	 - Gilbert |
+|              |Greens -	Greens |
+|              |GrnHill	 - Green Hills |
+|              |IDOTRR -	Iowa DOT and Rail Road |
+|              |Landmrk -	Landmark |
+|              |MeadowV -	Meadow Village |
+|              |Mitchel	- Mitchell |
+|              |Names	- North Ames |
+|              |NoRidge -	Northridge |
+|              |NPkVill	- Northpark Villa |
+|              |NridgHt - 	Northridge Heights |
+|              |NWAmes - Northwest Ames |
+|              |OldTown -	Old Town |
+|              |SWISU	- South & West of Iowa State University |
+|              |Sawyer	- Sawyer |
+|              |SawyerW	- Sawyer West |
+|              |Somerst	- Somerset |
+|              |StoneBr	- Stone Brook |
+|              |Timber -	Timberland |
+|              |Veenker	-Veenker |
 # Data Cleaning:
 For the training set, we have 2051 rows of data and 81 columns, including our target variable, SalePrice.
 I first checked for null values in the data set to know how much "missing data" we are working with. Now, missing is subjective as a null value doesn't always indicate missing data. For example, a home without a fence can be recorded as 'N/A' but it is a data point as it indicates the home does not have a fence.
