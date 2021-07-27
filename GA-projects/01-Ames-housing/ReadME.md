@@ -23,7 +23,8 @@ Total null values are below:
 
 ![Null_Values](../01-Ames-housing/photos/null_values.png)
 
-Knowing these values, I went ahead and featured engineered some of the variables in the null table and other variables in the dataset to make them more useful for analysis. Note: This is only a sample of features engineered not the full list
+Knowing these values, I went ahead and featured engineered some of the variables in the null table and other variables in the dataset to make them more useful for analysis.
+**Note**: This is only a sample of features engineered not the full list
 
 ![featured engineered variables](../01-Ames-housing/photos/feat_eng_var.png)
 
@@ -138,7 +139,7 @@ All three models had a healthy range in testing scores between 91 - 92%. However
 ![lasso coefficients](../01-Ames-housing/photos/lasso_coefs.png)
 
 - After our findings we can now recommend a few things that the homeowners in order to increase the value of their homes.
-- As shown above, Gross living area, the year built, Basement SF, Garage area and proximity to various conditions (Condition_1 Normal) are all things that affect the price but are outside of a homeowner's control. On the other hand, 'overall quality' and overall condition are something within the owner's purview. Here are a few:
+- As shown above, Gross living area, the year built, Basement SF, Garage area and proximity to various conditions (Condition_1 Normal) are all things that affect the price but are outside of a homeowner's control. On the other hand, **'overall quality' and overall condition** are something within the owner's purview. Here are a few more:
 
  **Driveway**: As mentioned above, homes with a paved drive way saw a 68.49% increase in Sale price compared to driveways that were partially paved. Clients are fully advised to pave their driveways if within their budget.
 
@@ -150,4 +151,13 @@ All three models had a healthy range in testing scores between 91 - 92%. However
 
  ![Sale Type](../01-Ames-housing/photos/sale_type.png)
 
-# Summary:
+# Shortcomings of this project:
+- As outlined above, these are a few improvements a home owner can make to increase the likelihood of their homes selling for a higher price. It is important to not that while our model can predict accurately 92% of the time, working with a knowledgable licensed real estate agent is the best way to get the most accurate value of your home as they have first hand information on what a particular market is like.
+
+- For instance, it was previously noted that the best neighborhood or the highest selling neighborhoods were **StoneBr**, **Nridght** , **Noridge , and Grnhill**.  But why were these Neighborhoods the most expensive? We are missing valuable information on what amenities are close to these neighborhoods that can affect the price. Things such as proximity to grocery stores, public parks and schools are just a few of those amenities but not an extensive list.
+
+- Also, the real estate market it self tends to have sub markets even within a particular town. Homes that appeal to a particular buyer may not appeal to another so more specialized knowledge is required to know how different features in a home affect a specific submarket within Ames, IA.
+
+
+# Conclusion:
+- Overall, our firm was able to get a 92% prediction accuracy of home prices in Ames, IA based on the information we were given by the county's assessors office. We would also be thrilled to offer our services for homeowners looking to sell their properties. We have some of the most qualified and leading agents in the industry who are well informed about the Ames,IA market and can further assist in getting an even more accurate price. We look forward to working with you!
