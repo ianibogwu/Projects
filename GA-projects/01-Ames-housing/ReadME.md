@@ -15,9 +15,25 @@ A copy of the data dictionary used in this project can be found at the link belo
 
 http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 
-| Feature | Description |    Data Type        |
-| :---    |   :----:    |     ---:   |
+| Feature | Description |   
+| :---    |   :----:    |
 | PID     | Parcel Identification number|
+| MS SUB CLASS| 020	1-STORY 1946 & NEWER ALL STYLES|
+                030	1-STORY 1945 & OLDER
+                040	1-STORY W/FINISHED ATTIC ALL AGES
+                045	1-1/2 STORY - UNFINISHED ALL AGES
+                050	1-1/2 STORY FINISHED ALL AGES
+                060	2-STORY 1946 & NEWER
+                070	2-STORY 1945 & OLDER
+                075	2-1/2 STORY ALL AGES
+                080	SPLIT OR MULTI-LEVEL
+                085	SPLIT FOYER
+                090	DUPLEX - ALL STYLES AND AGES
+                120	1-STORY PUD (Planned Unit Development) - 1946 & NEWER
+                150	1-1/2 STORY PUD - ALL AGES
+                160	2-STORY PUD - 1946 & NEWER
+                180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER
+                190	2 FAMILY CONVERSION - ALL STYLES AND AGES
 
 
 # Data Cleaning:
