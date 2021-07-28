@@ -18,7 +18,7 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 | Feature | Description |   
 | :---    |   :----:    |
 | PID     | Parcel Identification number|
-| MS Sub Class| Type of dwelling|
+| MS Sub Class| Type of dwelling involved in the sale|
 |              |  020	1-STORY 1946 & NEWER ALL STYLES|
 |              |  030	1-STORY 1945 & OLDER|
 |              |  040	1-STORY W/FINISHED ATTIC ALL AGES|
@@ -68,11 +68,11 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 |              |  NoSeWa -	Electricity and Gas Only |
 |              |  ELO	- Electricity only |
 |Lot Config    |  Lot configuration |
-|              |Inside	Inside lot |
-|              |Corner	Corner lot |
-|              |CulDSac	Cul-de-sac |
-|              |FR2	Frontage on 2 sides of property |
-|              |FR3	Frontage on 3 sides of property |
+|              |Inside -	Inside lot |
+|              |Corner -	Corner lot |
+|              |CulDSac	 - Cul-de-sac |
+|              |FR2	- Frontage on 2 sides of property |
+|              |FR3	 - Frontage on 3 sides of property |
 |Land Slope    | Slope of property |
 |              |Gtl -	Gentle slope |
 |              |Mod -	Moderate Slope |
@@ -106,6 +106,117 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 |              |StoneBr	- Stone Brook |
 |              |Timber -	Timberland |
 |              |Veenker	-Veenker |
+|Condition 1   | Proximity to various conditions |
+|              |  Artery	Adjacent to arterial street|
+|              |Feedr	Adjacent to feeder street	|
+|              |Norm	Normal	|   
+|              |RRNn	Within 200' of North-South Railroad |
+|              |RRAn	Adjacent to North-South Railroad |
+|              |PosN	Near positive off-site feature--park, greenbelt, etc |
+|              |PosA	Adjacent to postive off-site feature |
+|              |RRNe	Within 200' of East-West Railroad |
+|              |RRAe	Adjacent to East-West Railroad |
+|Condition 2   | Proximity to various conditions (if more than one is present) |
+|              |  Artery	Adjacent to arterial street|
+|              |Feedr	Adjacent to feeder street	|
+|              |Norm	Normal	|   
+|              |RRNn	Within 200' of North-South Railroad |
+|              |RRAn	Adjacent to North-South Railroad |
+|              |PosN	Near positive off-site feature--park, greenbelt, etc |
+|              |PosA	Adjacent to postive off-site feature |
+|              |RRNe	Within 200' of East-West Railroad |
+|              |RRAe	Adjacent to East-West Railroad |
+| Bldg Type    | Type of dwelling |
+|              |1Fam	- Single-family Detached	|
+|              | 2FmCon	- Two-family Conversion; originally built as one-family dwelling |
+|              |Duplx- 	Duplex |
+|              |TwnhsE -	Townhouse End Unit |
+|              |TwnhsI -	Townhouse Inside Unit |
+| House Style  | Style of Dwelling |
+|              |1Story -	One story |
+|              |1.5Fin -	One and one-half story: 2nd level finished |
+|              |1.5Unf -	One and one-half story: 2nd level unfinished |
+|              |2Story -	Two story |
+|              |2.5Fin -	Two and one-half story: 2nd level finished |
+|              |2.5Unf -	Two and one-half story: 2nd level unfinished |
+|              |SFoyer - Split Foyer |
+|              |SLvl	- Split Level |
+|Overall Quality| Rates the overall material and finish of the house |
+|               |  10	- Very Excellent |
+|               | 9	- Excellent |
+|               |8 -	Very Good |
+|               |7 -	Good |
+|               |6 -	Above Average |
+|               |5 -	Average |
+|               |4- Below Average |
+|               |3 -	Fair |
+|               |2 -	Poor |
+|               |1 -	Very Poor |
+|Overall Condition| Rates the overall finish of the house|
+|                 |  10	- Very Excellent |
+|                 | 9	- Excellent |
+|                 |8 -	Very Good |
+|                 |7 -	Good |
+|                 |6 -	Above Average |
+|                 |5 -	Average |
+|                 |4- Below Average |
+|                 |3 -	Fair |
+|                 |2 -	Poor |
+|                 |1 -	Very Poor |
+|Year Built       | Original Construction date |
+|Year Remod/Add   | Remodel date (same as year built if no remodeling or additions)|
+|Roof Style       | Type of Roof |
+|                 |Flat	Flat |
+|                 |Gable	Gable |
+|                 |Gambrel	Gabrel (Barn) |
+|                 |Hip -	Hip |
+|                 |Mansard -	Mansard
+|                 |Shed -	Shed |
+|Roof Matl        | Roof material |
+|                 |ClyTile -	Clay or Tile |
+|                 |CompShg -	Standard (Composite) Shingle |
+|                 |Membran -	Membrane |
+|                 |Metal -	Metal |
+|                 |Roll -	Roll |
+|                 |Tar&Grv - Gravel & Tar|
+|                 |WdShake	- Wood Shakes |
+|                 |WdShngl -	Wood Shingles |
+| Exterior 1      | Exterior covering on house |
+|                 |AsbShng - Asbestos Shingles |
+|                 |AsphShn - Asphalt Shingles |
+|                 |BrkComm -	Brick Common |
+|                 |BrkFace - Brick Face |
+|                 |CBlock - 	Cinder Block |
+|                 |CemntBd - Cement Board |
+|                 |HdBoard - Hard Board |
+|                 |ImStucc -	Imitation Stucco |
+|                 |MetalSd -	Metal Siding |
+|                 |Other -	Other |
+|                 |Plywood - Plywood |
+|                 |PreCast - PreCast	|
+|                 |Stone -	Stone |
+|                 |Stucco	- Stucco |
+|                 |VinylSd	- Vinyl Siding |
+|                 |Wd Sdng - Wood Siding |
+|                 |WdShing -	Wood Shingles |     
+| Exterior 2      | Exterior covering on house (if more than one material) |
+|                 |AsbShng - Asbestos Shingles |
+|                 |AsphShn - Asphalt Shingles |
+|                 |BrkComm -	Brick Common |
+|                 |BrkFace - Brick Face |
+|                 |CBlock - 	Cinder Block |
+|                 |CemntBd - Cement Board |
+|                 |HdBoard - Hard Board |
+|                 |ImStucc -	Imitation Stucco |
+|                 |MetalSd -	Metal Siding |
+|                 |Other -	Other |
+|                 |Plywood - Plywood |
+|                 |PreCast - PreCast	|
+|                 |Stone -	Stone |
+|                 |Stucco	- Stucco |
+|                 |VinylSd	- Vinyl Siding |
+|                 |Wd Sdng - Wood Siding |
+|                 |WdShing -	Wood Shingles |           
 # Data Cleaning:
 For the training set, we have 2051 rows of data and 81 columns, including our target variable, SalePrice.
 I first checked for null values in the data set to know how much "missing data" we are working with. Now, missing is subjective as a null value doesn't always indicate missing data. For example, a home without a fence can be recorded as 'N/A' but it is a data point as it indicates the home does not have a fence.
