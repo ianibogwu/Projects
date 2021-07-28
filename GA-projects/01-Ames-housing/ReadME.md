@@ -216,7 +216,37 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 |                 |Stucco	- Stucco |
 |                 |VinylSd	- Vinyl Siding |
 |                 |Wd Sdng - Wood Siding |
-|                 |WdShing -	Wood Shingles |           
+|                 |WdShing -	Wood Shingles |        
+| Mas Vnr Area    | Masonry veneer type |
+|                 | BrkCmn - Brick Common |
+|                 | BrkFace - Brick Face |
+|                 | CBlock - Cinder Block |
+|                 | None - None |
+|                 | Stone - Stone |
+|Mas Vnr area     | Masonry veneer area in square feet |
+|Exter Qual       | Evaluates the quality of the material on the exterior |
+|                 | 5: Ex-	Excellent |
+|                 | 4: Gd -	Good |
+|                 | 3: TA -	Average/Typical |
+|                 | 2: Fa	- Fair |
+|                 | 1: Po -	Poor |
+|                 | 0: NA - None |
+|Exter Cond       | Evaluates the condition of the material on the exterior |
+|                 | 5: Ex-	Excellent |
+|                 | 4: Gd -	Good |
+|                 | 3: TA -	Average/Typical |
+|                 | 2: Fa	- Fair |
+|                 | 1: Po -	Poor |
+|                 | 0: NA - None |
+|
+
+
+
+
+
+
+
+
 # Data Cleaning:
 For the training set, we have 2051 rows of data and 81 columns, including our target variable, SalePrice.
 I first checked for null values in the data set to know how much "missing data" we are working with. Now, missing is subjective as a null value doesn't always indicate missing data. For example, a home without a fence can be recorded as 'N/A' but it is a data point as it indicates the home does not have a fence.
