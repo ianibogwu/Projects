@@ -439,7 +439,7 @@ Here I will be describing some of the findings of our data.
 ![correlation](../01-Ames-housing/photos/Saleprice_correlation.png)
 
 - Correlations tell us how closely related the values we put in (independent variables) affect the outcome we are trying to figure out (dependent variables).
-- For this particular problem, we are trying tp figure out how the features of a home, including the neighborhood it's in affect how much it will sell for.
+- For this particular problem, we are trying to figure out how the features of a home, including the neighborhood it's in  will affect the sale price.
 - These show how all the independent variables correlate with the dependent. **Overall Quality** takes the number one spot with a correlation of 80 percent . The better a home's overall quality is, the higher the sale price and vice versa, holding all other factors constant.
 
 #### Gross living Area:
