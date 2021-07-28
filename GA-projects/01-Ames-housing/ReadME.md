@@ -541,7 +541,7 @@ All three models had a healthy range in testing scores between 91 - 92%. However
  ![Sale Type](../01-Ames-housing/photos/sale_type.png)
 
 # Shortcomings of this project:
-- As outlined above, these are a few improvements a home owner can make to increase the likelihood of their homes selling for a higher price. It is important to not that while our model can predict accurately 92% of the time, working with a knowledgable licensed real estate agent is the best way to get the most accurate value of your home as they have first hand information on what a particular market is like.
+- As outlined above, these are a few improvements a homeowner can make to increase the likelihood of their homes selling for a higher price. It is important to not that while our model can predict accurately 92% of the time, working with a knowledgeable licensed real estate agent is the best way to get the most accurate value of your home as they have first hand information on what a particular market is like.
 
 - For instance, it was previously noted that the best neighborhood or the highest selling neighborhoods were **StoneBr**, **Nridght** , **Noridge , and Grnhill**.  But why were these Neighborhoods the most expensive? We are missing valuable information on what amenities are close to these neighborhoods that can affect the price. Things such as proximity to grocery stores, public parks and schools are just a few of those amenities but not an extensive list.
 
