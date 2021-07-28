@@ -78,25 +78,7 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 |              |Mod -	Moderate Slope |
 |              |Sev	- Severe Slope |
 |Neighborhood  |Physical locations within Ames city limits |
-|              |Blmngtn	- Bloomington Heights |
-|              |Blueste	- Bluestem |
-|              |BrDale -	Briardale |
-|              |BrkSide -	Brookside |
-|              |ClearCr -	Clear Creek |
-|              |CollgCr	- College Creek |
-|              |Crawfor	- Crawford |
-|              |Edwards	- Edwards |
-|              |Gilbert	 - Gilbert |
-|              |Greens -	Greens |
-|              |GrnHill	 - Green Hills |
-|              |IDOTRR -	Iowa DOT and Rail Road |
-|              |Landmrk -	Landmark |
-|              |MeadowV -	Meadow Village |
-|              |Mitchel	- Mitchell |
-|              |Names	- North Ames |
-|              |NoRidge -	Northridge |
-|              |NPkVill	- Northpark Villa |
-|              |NridgHt - 	Northridge Heights |
+|              |Blmngtn	- Bloomington Heights    |NridgHt - 	Northridge Heights |
 |              |NWAmes - Northwest Ames |
 |              |OldTown -	Old Town |
 |              |SWISU	- South & West of Iowa State University |
@@ -238,14 +220,189 @@ http://jse.amstat.org/v19n3/decock/DataDocumentation.txt
 |                 | 2: Fa	- Fair |
 |                 | 1: Po -	Poor |
 |                 | 0: NA - None |
-|
-
-
-
-
-
-
-
+| Foundation      | Type of foundation |
+|	                |BrkTil -	Brick & Tile |
+|                 |CBlock	- Cinder Block |
+|                 |PConc - Poured Contrete |
+|                 |Slab	- Slab |
+|                 |Stone -	Stone |
+|                 |Wood -	Wood |
+| Bsmt Cond       | Evaluates the general condition of the basement |
+|                 | 5: Ex -	Excellent |
+|                 | 4: Gd -	Good |
+|                 | 3: TA -	Typical - slight dampness allowed |
+|                 | 2: Fa -	Fair - dampness or some cracking or settling |
+|                 | 1: Po - Poor - Severe cracking, settling, or wetness |
+|                 | 0: NA -	No Basement |
+| Bsmt Qual       | Evaluates the height of the basement |
+|                 | 5: Ex - 	Excellent (100+ inches)
+|                 | 4: Gd -	Good (90-99 inches)
+|                 | 3: TA -	Typical (80-89 inches)
+|                 | 2: Fa -	Fair (70-79 inches)
+|                 | 1: Po -	Poor (<70 inches
+|                 | 0: NA -	No Basement
+| Bsmt exposure   | refers to walkouts or garden level walls |
+|                 | 4: Gd -	Good exposure
+|                 | 3: Av - Average exposure (split levels or foyers typically score average or above)
+|                 | 2: Mn -	Minimum exposure
+|                 | 1: No -	No exposure
+|                 | 0: NA -	No Basement
+| Bsmt Fin Type 1 | Rating of basement finished area |
+|                 | 6: GLQ - Good Living Quarters |
+|                 | 5: ALQ -	Average Living Quarters |
+|                 | 4: BLQ - Below Average Living Quarters |
+|                 | 3: Rec -	Average Rec Room|
+|                 | 2: LwQ -	Low Quality|
+|                 | 1: Unf - Unfinshed|
+|                 | 0: NA -	No Basement|
+| Bsmt Fin Type 2 | Rating of basement finished area (if multiple types) |
+|                 | 6: GLQ - Good Living Quarters |
+|                 | 5: ALQ -	Average Living Quarters |
+|                 | 4: BLQ - Below Average Living Quarters |
+|                 | 3: Rec -	Average Rec Room|
+|                 | 2: LwQ -	Low Quality|
+|                 | 1: Unf - Unfinshed|
+|                 | 0: NA -	No Basement|
+|BsmtFin SF 1     | Type 1 finished square feet |
+|BsmtFin SF 2     | Type 2 finished square feet |
+|BsmtFin Unf SF   | Unfinished square feet |
+|Total Bsmt SF    | Total square feet |
+|Heating          | Type of heating |
+|      	          | Floor -	Floor Furnace |
+|                 | GasA -	Gas forced warm air furnace |
+|                 | GasW -	Gas hot water or steam heat |
+|                 | Grav -	Gravity furnace	|
+|                 | OthW -	Hot water or steam heat other than gas |
+|                 | Wall - 	Wall furnace |
+| HeatingQC       | Heating quality and condition |
+|                 | 5: Ex -	Excellent |
+|                 | 4: Gd -	Good |
+|                 | 3: TA -	Average/Typical |
+|                 | 2: Fa -	Fair |
+|                 | 1: Po -	Poor	|
+| Central air     | Central air conditioning |
+|                 | Yes |
+|                 | No  |
+| Electrical      | Electrical system |
+|                 | 4: SBrkr -	Standard Circuit Breakers & Romex |
+|                 | 3: FuseA - Fuse Box over 60 AMP and all Romex wiring (Average) |
+|                 | 2: FuseF -	60 AMP Fuse Box and mostly Romex wiring (Fair) |
+|                 | 1: FuseP -	60 AMP Fuse Box and mostly knob & tube wiring (poor) |
+|                 | 0: Mix -	Mixed |
+| 1st Flr SF      | First Floor square feet |
+| 2nd Flr SF      | Second Floor |
+| Low Qual Fin SF | Low quality finished SF (all floors) |
+| Gr Liv Area     | Above grade (ground) living area in square feet |
+| Bsmt Full Bath  | Number of full bathrooms in the basement |
+| Bsmt half bath  | Number of half baths in the basement |
+| Full baths      | Number of full baths above grade |
+| Half baths      | Number of half baths  above grade |
+| Bedrooms        | Bedrooms above grade |
+| Kitchen         | Kitchens above grade |
+| KitchenQual     | Quality of kitchen   |
+|                 | 5: Ex -	Excellent |
+|                 | 4: Gd -	Good |
+|                 | 3: TA -	Typical/Average |
+|                 | 2: Fa -	Fair |
+|                 | 1: Po -	Poor |
+| Functional      | Home functionality (Assume typical unless deductions are warranted) |
+|                 | 7: Typ -	Typical Functionality |
+|                 | 6: Min1 -	Minor Deductions 1 |
+|                 | 5: Min2 -	Minor Deductions 2 |
+|                 | 4: Mod -	Moderate Deductions |
+|                 | 3: Maj1 -	Major Deductions 1 |
+|                 | 2: Maj2 -	Major Deductions 2 |
+|                 | 1: Sev -	Severely Damaged |
+|                 | 0: Sal -	Salvage only |
+| Fireplaces      | Number of fireplaces |
+| FireplaceQU     | Fireplace quality |
+|                 | 5: Ex - 	Excellent - Exceptional Masonry Fireplace |
+|                 | 4: Gd -	Good - Masonry Fireplace in main level |
+|                 | 3: TA -	Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement |
+|                 | 2: Fa -	Fair - Prefabricated Fireplace in basement |
+|                 | 1: Po -	Poor - Ben Franklin Stove |
+|                 | 0: NA -	No Fireplace |
+| Garage Type     | Garage location |
+|                 | 2Types -	More than one type of garage |
+|                 | Attchd - 	Attached to home |
+|                 | Basment	 - Basement Garage |
+|                 | BuiltIn	- Built-In (Garage part of house - typically has room above garage) |
+|                 |CarPort -	Car Port |
+|                 |Detchd	 - Detached from home |
+|                 |NA	 - No Garage |
+| Garage Yr Blt   | Year garage was built |
+| Garage Finish   | Interior finish of the garage |
+|                 | 3: Fin -	Finished |
+|                 | 2: RFn -	Rough Finished |
+|                 | 1:  Unf -	Unfinished |
+|                 | 0: NA -	No Garage |
+| Garage cars     | Size of garage in car capacity |
+| Garage area     | Size of garage in square feet |
+| Garage quality  | Garage quality |
+|                 | 5: Ex -	Excellent |
+|                 | 4: Gd -	Good |
+|                 | 3: TA -	Typical/Average |
+|                 | 2: Fa -	Fair |
+|                 | 1: Po -	Poor |
+|                 | 0: NA -	No Garage |
+| Garage condition| Garage condition |
+|                 | 5: Ex -	Excellent |
+|                 | 4: Gd -	Good |
+|                 | 3: TA -	Typical/Average |
+|                 | 2: Fa -	Fair |
+|                 | 1: Po -	Poor |
+|                 | 0: NA -	No Garage |
+|  Paved drive    | Paved driveway |
+|                 |3: Y -	Paved |
+|                 |2: P -	Partial Pavement|
+|                 |1: N -	Dirt/Gravel|
+| Wood Deck SF     | Wood deck area in square feet |
+| Open Porch SF    | Open porch area in square feet |
+| Enclosed porch   | Enclosed porch area in square feet |
+| 3 Ssn Porch     | Three season porch area in square feet |
+| Screen porch    | Screen porch area in square feet |
+| Pool Area       | Pool area in square feet |
+| Pool QC         | Pool Quality|
+|		              |Ex -	Excellent |
+|                 |Gd -	Good |
+|                 |TA -	Average/Typical |
+|                 |Fa - 	Fair |
+|                 |NA -	No Pool |
+| Fence            | Fence Quality |
+|                 | 5: GdPrv -	Good Privacy |
+|                 | 4: MnPrv -	Minimum Privacy |
+|                 | 3: GdWo - 	Good Wood |
+|                 | 2: MnWw -	Minimum Wood/Wire |
+|                 | 1: NA -	No Fence |
+| Misc Feature    | Miscellaneous feature not covered in other categories |
+|                 | Elev -	Elevator |
+|                 | Gar2 -	2nd Garage (if not described in garage section) |
+|                 | Othr -	Other |
+|                 | Shed - Shed (over 100 SF) |
+|                 | TenC -	Tennis Court |
+|                 | NA -	None |
+| Misc Val        | dollar value of miscellaneous feature |
+| Mo Sold         | Month sold |
+| Yr Sold         | Year Sold |
+| Sale Type       | Type of Sale |
+|                 | WD - 	Warranty Deed - Conventional |
+|                 | CWD	- Warranty Deed - Cash |
+|                 | VWD -	Warranty Deed - VA Loan |
+|                 | New -	Home just constructed and sold |
+|                 | COD -	Court Officer Deed/Estate |
+|                 | Con -	Contract 15% Down payment regular terms |
+|                 | ConLw -	Contract Low Down payment and low interest |
+|                 | ConLI -	Contract Low Interest |
+|                 | ConLD -	Contract Low Down |
+|                 | Oth -	Other |
+| Sale conditions | Condition of Sale |
+|                 | Normal -	Normal Sale |
+|                 | Abnorml	- Abnormal Sale -  trade, foreclosure, short sale |
+|                 | AdjLand -	Adjoining Land Purchase |
+|                 | Alloca -	Allocation - two linked properties with separate deeds, typically condo with a garage unit |
+|                 | Family -	Sale between family members |
+|                 | Partial	 - Home was not completed when last assessed (associated with New Homes) |
+| SalePrice       | Sale price in $$|
 
 # Data Cleaning:
 For the training set, we have 2051 rows of data and 81 columns, including our target variable, SalePrice.
